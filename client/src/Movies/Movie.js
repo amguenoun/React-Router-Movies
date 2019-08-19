@@ -32,7 +32,7 @@ const Movie = (props) => {
   const { title, director, metascore, stars } = movie;
 
   if (!stars) {
-    return <div>Loading movie information...</div>;
+    return <div>Loading...</div>;
   }
   return (
     <div className="save-wrapper">
