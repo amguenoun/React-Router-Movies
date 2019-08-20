@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import axios from 'axios';
 import MovieCard from "./MovieCard";
 const Movie = (props) => {
@@ -24,7 +24,7 @@ const Movie = (props) => {
   // Uncomment this only when you have moved on to the stretch goals
   const saveMovie = () => {
     const addToSavedList = props.addToSavedList;
-    addToSavedList(<Link to={`/movies/${movie.id}`}>{movie.title}</Link>)
+    addToSavedList(<NavLink activeClassName='active' to={`/movies/${movie.id}`}>{movie.title}</NavLink>)
   }
 
   return (
