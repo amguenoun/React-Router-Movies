@@ -70,3 +70,13 @@ body {
   padding: 5px 10px;
   background-color: lightskyblue;
 }
+
+.regular-links{
+  text-decoration:none;
+  color:black;
+}
+
+.movie-list{
+  width:70%;
+  margin: 0 auto;
+}
