@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import MovieCard from "./MovieCard";
 const Movie = (props) => {
@@ -23,7 +24,8 @@ const Movie = (props) => {
   // Uncomment this only when you have moved on to the stretch goals
   const saveMovie = () => {
     const addToSavedList = props.addToSavedList;
-    addToSavedList(movie)
+    const historyPush = () => props.history.push(`/movies/${movie.id}`);
+    addToSavedList(<span className="saved-movie" onClick={() => historyPush()}>{movie.title}</span>)
   }
 
   return (
