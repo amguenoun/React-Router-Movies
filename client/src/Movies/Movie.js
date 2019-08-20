@@ -26,9 +26,6 @@ const Movie = (props) => {
     addToSavedList(movie)
   }
 
-  if (!movie) {
-    return <div>Loading movie information...</div>;
-  }
   return (
     <div className="save-wrapper">
       <MovieCard key={movie.id} movie={movie} />
