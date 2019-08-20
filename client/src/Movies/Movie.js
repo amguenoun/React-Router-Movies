@@ -29,10 +29,7 @@ const Movie = (props) => {
   if (!movie) {
     return <div>Loading movie information...</div>;
   }
-  const { title, director, metascore, stars } = movie;
-
-
-  return (!stars ? <div>Loading...</div> :
+  return (
     <div className="save-wrapper">
       <MovieCard key={movie.id} movie={movie} />
       <div className="save-button" onClick={() => saveMovie()}>Save</div>
