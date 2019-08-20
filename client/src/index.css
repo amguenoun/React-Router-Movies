@@ -40,6 +40,12 @@ body {
   margin-right: 10px;
 }
 
+.active{
+  background:black;
+  color:White;
+  padding:1%;
+}
+
 .saved-movie {
   margin: 0 10px;
 }
