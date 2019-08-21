@@ -40,6 +40,12 @@ body {
   margin-right: 10px;
 }
 
+.active{
+  background:black;
+  color:White;
+  padding:1%;
+}
+
 .saved-movie {
   margin: 0 10px;
 }
@@ -64,9 +70,20 @@ body {
 .save-button:hover {
   background-color: green;
   color: white;
+  cursor:pointer;
 }
 
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
+}
+
+.regular-links{
+  text-decoration:none;
+  color:black;
+}
+
+.movie-list{
+  width:70%;
+  margin: 0 auto;
 }
